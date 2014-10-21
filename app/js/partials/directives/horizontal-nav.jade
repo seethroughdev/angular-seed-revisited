@@ -1,0 +1,4 @@
+ul.horizontal-list.horizontal-nav
+  li(data-ng-repeat="sub in subs track by $index")
+    //- a {{sub}}
+    a(data-ui-sref="{{slug}}.{{sub}}", data-ui-sref-active="is-active", href) {{sub}}

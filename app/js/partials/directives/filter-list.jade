@@ -1,0 +1,15 @@
+div
+  h3 {{title}}
+  .scroll-wrapper
+    ul.filter__tags
+      li.is-active(data-ng-repeat="filter in filters track by $index") {{filter}}
+
+    //- h3 Noteworthy
+    //- .scroll-wrapper
+    //-   ul
+    //-     li Refunds were 12.8% higher this month
+    //-     li Your Y/Y Growth peaked on August 5th
+    //-     li Your churn rate has gone down 3 month in a row
+    //-     li You have 13 subs starting and 7 subs ending this month
+    //- .btn-row
+    //-   a.btn(href="#") See More

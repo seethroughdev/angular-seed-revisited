@@ -1,0 +1,32 @@
+doctype
+html(data-ng-app="mainApp")
+
+  head
+    block head
+
+      include ../partials/meta
+
+      block css
+        link(rel='stylesheet', href='../css/main.css')
+
+      //- script(src='../js/modernizr.js')
+
+      //- IE shims
+      //- block ie
+      //-   include ../partials/ie
+
+  body()
+    #viewport
+
+      main.main__content(data-ui-view, data-ng-controller="MainCtrl as mainCtrl")
+        block body
+
+
+        //- CONTENT GOES HERE
+
+
+      block footer
+
+    block scripts
+      script(src='../js/vendor.js')
+      script(src='../js/bundle.js')
