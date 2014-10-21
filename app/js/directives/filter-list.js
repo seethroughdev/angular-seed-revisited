@@ -6,7 +6,7 @@ var _           = require('lodash')
 var $ = window.jQuery;
 
 
-module.exports = function($location, $timeout, $rootScope, $state,
+module.exports = /* @ngInject */ function($location, $timeout, $rootScope, $state,
                           STATE, ChartSvc, UrlUtil) {
 
   return {

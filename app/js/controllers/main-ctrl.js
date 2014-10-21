@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function($rootScope, $scope,
+module.exports = /* @ngInject */ function($rootScope, $scope,
       ModalsService) {
 
 

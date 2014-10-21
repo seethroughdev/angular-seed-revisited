@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function($stateProvider,
+module.exports = /* @ngInject */ function($stateProvider,
                           $urlRouterProvider,
                           $locationProvider,
                           STATE) {

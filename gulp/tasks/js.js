@@ -23,6 +23,7 @@ gulp.task('js:browserify', function () {
     .on('error', handleErrors)
     .pipe(source( './' + path.src.js + 'index.js' ))
     .pipe($.changed(path.dist.js))
+    .pipe($.streamify($.ngAnnotate()))
     .pipe($.rename('bundle.js'))
     .pipe(gulp.dest(path.dist.js))
     .pipe($.rename('bundle.min.js'))

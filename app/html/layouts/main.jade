@@ -1,5 +1,5 @@
 doctype
-html(data-ng-app="mainApp")
+html(data-ng-app="mainApp", ng-strict-di)
 
   head
     block head
@@ -29,4 +29,4 @@ html(data-ng-app="mainApp")
 
     block scripts
       script(src='../js/vendor.js')
-      script(src='../js/bundle.js')
+      script(src='../js/bundle.min.js')
