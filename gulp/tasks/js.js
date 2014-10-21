@@ -43,9 +43,14 @@ gulp.task('js:vendor', function() {
     path.bower.path + 'angular-loading-bar/build/loading-bar.js'
     ])
     .on('error', handleErrors)
-    // .pipe($.newer(path.dist.js + 'vendor.js'))
+    .pipe($.newer(path.dist.js + 'vendor.js'))
     .pipe($.concatSourcemap('vendor.js'))
     .pipe($.size({ showFiles: true, title: 'compressed vendor:' }))
+    .pipe(gulp.dest(path.dist.js))
+    .pipe($.rename('vendor.min.js'))
+    // can't uglify with concatSourceMap, throws an error -AL
+    // .pipe($.uglify())
+    .on('error', handleErrors)
     .pipe(gulp.dest(path.dist.js));
 });
 
