@@ -57,7 +57,6 @@
     "karma-mocha": "^0.1.9",
     "karma-mocha-reporter": "^0.3.1",
     "karma-phantomjs-launcher": "^0.1.4",
-    "lazy.js": "^0.3.2",
     "lodash": "^2.4.1",
     "mocha": "^1.21.5",
     "moment": "^2.8.3",

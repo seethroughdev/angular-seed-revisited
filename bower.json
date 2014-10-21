@@ -1,7 +1,7 @@
 {
-  "name": "static-gulp-browserify",
+  "name": "angular-seed-revisited",
   "version": "0.0.0",
-  "homepage": "https://github.com/seethroughtrees/static-gulp-browserify",
+  "homepage": "https://github.com/seethroughtrees/angular-seed-revisited",
   "authors": [
     "Adam L. <github@adamin.net>"
   ],
@@ -24,8 +24,6 @@
     "mocha": "~1.21.4",
     "chai": "~1.9.1",
     "chai-jquery": "~1.2.2",
-    "c3": "git@github.com:masayuki0812/c3.git",
-    "d3": "~3.4.11",
     "jquery": "~2.1.1",
     "angular": "~1.3",
     "angular-mocks": "~1.3",
